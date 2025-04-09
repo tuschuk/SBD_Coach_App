@@ -1,4 +1,7 @@
 import logo from './logo.svg';
+import squatImage from './Images/Squat.jpg'
+import benchImage from './Images/Bench.jpg'
+import deadliftImage from './Images/Deadlift.jpg'
 import './App.css';
 
 function App() {
@@ -6,7 +9,7 @@ function App() {
     "squat": {
       "name": "squat",
       "guide": "this is a step by step on how to preform a squat",
-      "image": "/Squat.jpg",
+      "image": squatImage,
       "steps": {
         1: "step 1",
         2: "step 2",
@@ -17,7 +20,7 @@ function App() {
     "deadlift": {
       "name": "deadlift",
       "guide": "this is a step by step on how to preform a deadlift",
-      "image": "/Deadlift.jpg",
+      "image": deadliftImage,
       "steps": {
         1: "step 1",
         2: "step 2",
@@ -29,7 +32,7 @@ function App() {
     "bench": {
       "name": "bench",
       "guide": "this is a step by step on how to preform a benchpress",
-      "image": "/Bench.jpg",
+      "image": benchImage,
       "steps": {
         1: "step 1",
         2: "step 2",
