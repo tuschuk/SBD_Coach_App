@@ -1,16 +1,19 @@
 {
   "files": {
     "main.css": "/SBD_Coach_App/static/css/main.4bcd8f2b.css",
-    "main.js": "/SBD_Coach_App/static/js/main.ac9e0c92.js",
+    "main.js": "/SBD_Coach_App/static/js/main.c16cf9c5.js",
     "static/js/453.78769ffa.chunk.js": "/SBD_Coach_App/static/js/453.78769ffa.chunk.js",
+    "static/media/Bench.jpg": "/SBD_Coach_App/static/media/Bench.cb727cb7e44b721b014d.jpg",
+    "static/media/Squat.jpg": "/SBD_Coach_App/static/media/Squat.b9c701e089a4544c90e2.jpg",
+    "static/media/Deadlift.jpg": "/SBD_Coach_App/static/media/Deadlift.6f70af71f630974f311a.jpg",
     "static/media/logo.svg": "/SBD_Coach_App/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/SBD_Coach_App/index.html",
     "main.4bcd8f2b.css.map": "/SBD_Coach_App/static/css/main.4bcd8f2b.css.map",
-    "main.ac9e0c92.js.map": "/SBD_Coach_App/static/js/main.ac9e0c92.js.map",
+    "main.c16cf9c5.js.map": "/SBD_Coach_App/static/js/main.c16cf9c5.js.map",
     "453.78769ffa.chunk.js.map": "/SBD_Coach_App/static/js/453.78769ffa.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.4bcd8f2b.css",
-    "static/js/main.ac9e0c92.js"
+    "static/js/main.c16cf9c5.js"
   ]
 }
