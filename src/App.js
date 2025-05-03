@@ -3,8 +3,13 @@ import squatImage from './Images/Squat.jpg'
 import benchImage from './Images/Bench.jpg'
 import deadliftImage from './Images/Deadlift.jpg'
 import './App.css';
+import React, {useState} from "react";
 
 function App() {
+  const [page, setPage] = useState("welcome");
+
+  console.log(page);
+
   const data = {
     "squat": {
       "name": "squat",
@@ -42,13 +47,12 @@ function App() {
     }
   }
   
-  function displaySteps() {
-    const keys = Object.keys(data.squat.steps)
+  function displaySteps(page) {
+    const keys = Object.keys(data[page].steps)
 
-    return keys.map(step => {
-      return <p>{data.squat.steps[step]}</p>
-    });
-  
+      return keys.map(step => {
+        return <p>{data[page].steps[step]}</p>
+      });  
   } 
 
   function displayExercises() {
@@ -56,46 +60,54 @@ function App() {
 
     return keys.map((item, index) => {
       return (
-        <section key={index}>
-        <h1>
-          {data[item].name}
-        </h1>
-        {/* <p>
-          {data.squat.guide}
-        </p> */}
-        <img src={data[item].image} className="image">
-        
-        </img>
-        {/* <p>STEPS</p>
-        {
-          displaySteps()
-        } */}
-        {/* <p>{data.squat.steps[1]}</p>
-        <p>{data.squat.steps[2]}</p>
-        <p>{data.squat.steps[3]}</p> */}
+        <section className="card" key={index}>
+          <button onClick={() => setPage(item)} className="title">
+            {data[item].name}
+          </button>
+          <img src={data[item].image} className="image"/>
       </section>
       )
     })
   }
 
+  function handleClick() {
+    console.log("clicked")
+  }
+
+  function displayPage (page) {
+    return (
+      <div className="exercises">
+        <button back onClick={ () => setPage("welcome")}>back </button>
+        <h1>{data[page].name}</h1>
+        {displaySteps (page)}
+    </div>
+    )
+  }
+
+  if(page === "squat")
+    return (
+     <>
+      {displayPage(page)}
+     </>
+  )
+  if(page === "deadlift")
+    return (
+      <div className="exercises">
+        <h1>deadlift</h1>
+    </div>
+  )
+  if(page === "bench")
+    return (
+      <div className="exercises">
+        <h1>bench</h1>
+    </div>
+  )
+
   return (
     <div className="exercises">
-      
-
       {displayExercises()}
-
-
-
-
-
-
     </div>
   );
 }
-
-
-
-
-
 
 export default App;
