@@ -104,5 +104,22 @@ h1 {
   background-color: white;
 }
 
+.step {
+  padding: 20px;
+  border: 1px solid black;
+}
 
+.stepTitle {
+    background: red;
+    padding: 20px;
+    text-align: center;
+    font-size: 25px;
+    border-width: 5px;
+    border-color: black;
+    border-style: solid;
+}
 
+.stepImage {
+  display: block;
+  margin: auto;
+}
