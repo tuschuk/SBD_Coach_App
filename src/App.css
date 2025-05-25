@@ -1,9 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Knewave&display=swap');
 
-
-
-
-
 .App {
   text-align: center;
 }
@@ -44,43 +40,60 @@
 }
 
 .image {
-  /* height: 100vh;
-  background-position: center; */
-  /* height: 200px; */
-  width: 100%;
+  width:  -webkit-fill-available;
+  height: -webkit-fill-available;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+
+
 }
 
 body {
-  background-color: #000000;
+  background-color: #3b3b3b;
+  padding: 30px;
 }
 
 
 .card{
-  width: 33.333%;
+  width: 300px;
   background-color: white;
+  background-color: black;
   border-radius: 10px;
   display: flex;
-  /* justify-content: center; */
   flex-direction: column;
-  padding: 15px;
+  box-shadow: 5px 5px 10px #00000066;
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.card:hover {
+  box-shadow: 20px 20px 20px #00000066;
+  cursor: pointer;
 }
 
 .exercises {
   display: flex;
-  gap: 5px;
+  gap: 25px;
 }
 
 .title {
-  color: black;
-  margin: 10px 0 10px 0;
+  color: white;
+  background-color: #57192e;
+  border: none;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
   text-align: center;
   font-family: "Knewave", system-ui;
   font-weight: 400;
   font-style: normal;
   text-transform: capitalize;
   font-size: 20px;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  transition: box-shadow 0.5s ease;
+}
+
+.card:hover .title {
+  background-color: #9d1725;
 }
 
 h1 {
