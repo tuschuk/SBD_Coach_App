@@ -105,8 +105,7 @@ h1 {
 }
 
 .step {
-  padding: 20px;
-  border: 1px solid black;
+  padding: 0px 20px;
 }
 
 .stepTitle {
@@ -122,4 +121,18 @@ h1 {
 .stepImage {
   display: block;
   margin: auto;
+}
+
+.pageTitle {
+  color: black;
+  font-family: "Knewave", system-ui; 
+  text-align: center;
+}
+
+.backButton {
+    border-radius: 100px;
+    padding: 8px 16px;
+    border: none;
+    background: black;
+    color: white;
 }

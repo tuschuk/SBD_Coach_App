@@ -7,7 +7,7 @@ import './App.css';
 import React, {useState} from "react";
 
 function App() {
-  const [page, setPage] = useState("deadlift");
+  const [page, setPage] = useState("welcome");
 
   console.log(page);
 
@@ -94,8 +94,8 @@ function App() {
   if(page === "deadlift")
     return (
       <div className="deadliftPage">
-        {/* <button back onClick={ () => setPage("welcome")}>back </button> */}
-        <h1>deadlift</h1>
+        <button onClick={ () => setPage("welcome")} className="backButton">back </button>
+        <h1 className="pageTitle">Deadlift</h1>
         <section>
           <article className="step">
            <p className="stepTitle">Step 1 </p>
