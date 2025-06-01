@@ -118,8 +118,45 @@ function App() {
   )
   if(page === "bench")
     return (
-      <div className="exercises">
-        <h1>bench</h1>
+      <div className="banchPage">
+        <button onClick={ () => setPage("welcome")} className="backButton">back </button>
+        <h1 className="pageTitle">Bench</h1>
+        <section>
+          <article className="step">
+            <p className="stepTitle">1. Grip the Bar</p>
+            <p>
+            Position your hands so your forearms remain vertical throughout the lift. A narrower grip shifts more emphasis to the triceps, while a wider grip targets the chest more. Choose a grip width that aligns with your goals and maintains efficient mechanics.
+            </p>
+             <p className="stepTitle">2. Set Your Feet</p>
+            <p>
+            Place your feet shoulder-width apart with a slight outward rotation. Once positioned, keep them firmly planted and unmoving throughout the setup and lift. Stable foot placement is key to full-body tension and leg drive.
+            </p>
+             <p className="stepTitle">3. Create Full-Body Positioning</p>
+            <p>
+            Keeping your feet locked in place, push your upper body forward so that your head and shoulders come off the bench. Then, slide your body back toward your feet. This movement creates a natural arch in your lower back and positions your ankles behind your knees—ideal for generating leg drive.
+            </p>
+             <p className="stepTitle">4. Position Your Head Under the Bar</p>
+            <p>
+            Without shifting your feet, move your head (or entire body if necessary) downward until your eyes are directly under the bar. This ensures an efficient bar path when unracking.
+            </p>
+             <p className="stepTitle">5. Grip and Brace</p>
+            <p>
+            Squeeze the bar as hard as you can to activate the upper body and reinforce tension. Simultaneously, brace your core to protect your spine and enhance stability.
+            </p>
+            <p className="stepTitle">6. Unrack the Bar</p>
+            <p>
+            Retract your shoulder blades and press them firmly into the bench. Drive your hips upward (off the bench) to assist with a strong unrack. Once the bar is directly over your chest, bring your hips back down while pushing your feet into the floor and spreading your knees outward for leg drive.
+            </p>
+            <p className="stepTitle">7. Control the Descent</p>
+            <p>
+            Lower the bar with control to the mamillary line (roughly nipple level), keeping elbows at an appropriate angle—typically 45–75 degrees from the torso depending on grip and build. 
+            </p>
+             <p className="stepTitle">8. Drive the Bar Up</p>
+            <p>
+            Press the bar explosively back up and slightly back toward the upper chest or shoulders, maintaining a smooth and efficient bar path.
+            </p>
+          </article>
+        </section>
     </div>
   )
 
