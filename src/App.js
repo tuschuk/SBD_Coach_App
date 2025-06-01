@@ -87,10 +87,50 @@ function App() {
 
   if(page === "squat")
     return (
-     <>
-      {displayPage(page)}
-     </>
-  )
+      <div className="squatPage">
+        <button onClick={ () => setPage("welcome")} className="backButton">back </button>
+        <h1 className="pageTitle">Squat</h1>
+        <section>
+          <article className="step">
+            <p className="stepTitle">1. Set the Bar </p>
+            <p>
+            Position the bar securely across your upper back, just below the traps or on the rear delts, depending on your squat style.
+            </p>
+            <p className="stepTitle">2. Unrack the Bar </p>
+            <p>
+            Stand tall, lift the bar off the rack with control, and take a few deliberate steps back. 
+            </p>
+            <p className="stepTitle">3. Set Your Stance </p>
+            <p>
+            Place your feet shoulder-width apart (or slightly wider), with toes pointed slightly outward.
+            </p>
+            <p className="stepTitle">4. Initiate the Movement </p>
+            <p>
+            Push your hips slightly back as if reaching for a chair behind you.
+            </p>
+            <p className="stepTitle">5. Brace Your Core </p>
+            <p>
+            Engage your core muscles to stabilize your spine throughout the lift.
+            </p>
+            <p className="stepTitle">6. Controlled Descent </p>
+            <p>
+            Lower yourself by bending at the hips and knees, maintaining balance and control.
+            </p>
+            <p className="stepTitle">7. Maintain a Neutral Spine </p>
+            <p>
+            Keep your chest up and gaze forward or slightly upward to help maintain proper posture 
+            </p>
+            <p className="stepTitle">8. Depth </p>
+            <p>
+            Descend until your thighs are just below parallel to the ground (or to your mobility's safe limit). 
+            </p>
+            <p className="stepTitle">9. Drive Up </p>
+            <p>
+            Push through your heels, keeping the knees tracking outward, and return to a standing position.
+            </p>
+          </article>
+        </section>
+    </div>)
   if(page === "deadlift")
     return (
       <div className="deadliftPage">
@@ -146,7 +186,7 @@ function App() {
   )
   if(page === "bench")
     return (
-      <div className="banchPage">
+      <div className="benchPage">
         <button onClick={ () => setPage("welcome")} className="backButton">back </button>
         <h1 className="pageTitle">Bench</h1>
         <section>
