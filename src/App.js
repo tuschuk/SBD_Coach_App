@@ -87,10 +87,50 @@ function App() {
 
   if(page === "squat")
     return (
-     <>
-      {displayPage(page)}
-     </>
-  )
+      <div className="squatPage">
+        <button onClick={ () => setPage("welcome")} className="backButton">back </button>
+        <h1 className="pageTitle">Squat</h1>
+        <section>
+          <article className="step">
+            <p className="stepTitle">1. Set the Bar </p>
+            <p>
+            Position the bar securely across your upper back, just below the traps or on the rear delts, depending on your squat style.
+            </p>
+            <p className="stepTitle">2. Unrack the Bar </p>
+            <p>
+            Stand tall, lift the bar off the rack with control, and take a few deliberate steps back. 
+            </p>
+            <p className="stepTitle">3. Set Your Stance </p>
+            <p>
+            Place your feet shoulder-width apart (or slightly wider), with toes pointed slightly outward.
+            </p>
+            <p className="stepTitle">4. Initiate the Movement </p>
+            <p>
+            Push your hips slightly back as if reaching for a chair behind you.
+            </p>
+            <p className="stepTitle">5. Brace Your Core </p>
+            <p>
+            Engage your core muscles to stabilize your spine throughout the lift.
+            </p>
+            <p className="stepTitle">6. Controlled Descent </p>
+            <p>
+            Lower yourself by bending at the hips and knees, maintaining balance and control.
+            </p>
+            <p className="stepTitle">7. Maintain a Neutral Spine </p>
+            <p>
+            Keep your chest up and gaze forward or slightly upward to help maintain proper posture 
+            </p>
+            <p className="stepTitle">8. Depth </p>
+            <p>
+            Descend until your thighs are just below parallel to the ground (or to your mobility's safe limit). 
+            </p>
+            <p className="stepTitle">9. Drive Up </p>
+            <p>
+            Push through your heels, keeping the knees tracking outward, and return to a standing position.
+            </p>
+          </article>
+        </section>
+    </div>)
   if(page === "deadlift")
     return (
       <div className="deadliftPage">
@@ -98,11 +138,39 @@ function App() {
         <h1 className="pageTitle">Deadlift</h1>
         <section>
           <article className="step">
-           <p className="stepTitle">Step 1 </p>
+           <p className="stepTitle">1. Set Your Stance </p>
            <p>
-            Set up a base with your feet. After loading the desired amount of weight, approach the barbell. Set up your feet so your midfoot is directly underneath the bar as shown in figure 1. Position your feet so they are shoulder width apart.
+            Position the bar directly over the midfoot, about an inch from your shins. Your feet should be hip-width apart with toes slightly pointed out. The bar should lightly graze your shins when you reach down.
            </p>
            <img src={DeadliftStep1} width="300px" height="300px" className ="stepImage"></img>
+          <p className="stepTitle">2. Create Foot Tension </p>
+           <p>
+            Distribute your weight through three key contact points: the heel, the ball of the big toe, and the ball of the pinky toe. Actively "spread the floor" with your feet to generate full-body tension and create a stable base.
+           </p>
+           <p className="stepTitle">3. Brace Your Core </p>
+           <p>
+            Inhale deeply into your belly and engage your core as if bracing for impact. This helps protect your spine and supports the lift from the ground up.
+           </p>
+           <p className="stepTitle">4. Hinge at the Hips </p>
+           <p>
+            Push your hips as far back as possible while keeping them relatively high. Avoid turning the movement into a squat—this common error shifts tension away from the posterior chain and can lead to lower back discomfort.
+           </p>
+           <p className="stepTitle">5. Grip the Bar </p>
+           <p>
+            Reach straight down to grasp the bar just outside your knees, using either a double overhand or mixed grip. Your arms should remain straight and vertical.
+           </p>
+           <p className="stepTitle">6. Pull the Slack Out of the Bar </p>
+           <p>
+            With your grip set, lift your chest, engage your lats by pulling the shoulder blades down and back, and create full-body tension. You should feel tightness from your feet to your shoulders before initiating the lift.
+           </p>
+           <p className="stepTitle">7. Drive Up </p>
+           <p>
+            Push through the floor using your legs and hips together, keeping the bar close to your body. Stand tall at the top with a neutral spine and locked-out hips, avoiding excessive leaning back.
+           </p>
+           <p className="stepTitle">8. Control the Descent </p>
+           <p>
+            Reverse the movement by hinging at the hips first, then bending the knees once the bar passes them. Lower the bar with control until it returns to the floor.
+           </p>
           </article>
           {/* <ul>
             <li><strong>Step 1:</strong> Set up a base with your feet. After loading the desired amount of weight, approach the barbell. Set up your feet so your midfoot is directly underneath the bar as shown in figure 1. Position your feet so they are shoulder width apart. </li>
@@ -118,7 +186,7 @@ function App() {
   )
   if(page === "bench")
     return (
-      <div className="banchPage">
+      <div className="benchPage">
         <button onClick={ () => setPage("welcome")} className="backButton">back </button>
         <h1 className="pageTitle">Bench</h1>
         <section>
