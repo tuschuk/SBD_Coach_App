@@ -99,3 +99,40 @@ body {
 h1 {
   color: white;
 }
+
+.deadliftPage {
+  background-color: white;
+}
+
+.step {
+  padding: 0px 20px;
+}
+
+.stepTitle {
+    background: red;
+    padding: 20px;
+    text-align: center;
+    font-size: 25px;
+    border-width: 5px;
+    border-color: black;
+    border-style: solid;
+}
+
+.stepImage {
+  display: block;
+  margin: auto;
+}
+
+.pageTitle {
+  color: black;
+  font-family: "Knewave", system-ui; 
+  text-align: center;
+}
+
+.backButton {
+    border-radius: 100px;
+    padding: 8px 16px;
+    border: none;
+    background: black;
+    color: white;
+}
