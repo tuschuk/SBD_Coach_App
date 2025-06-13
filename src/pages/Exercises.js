@@ -7,7 +7,7 @@ import '../App.css';
 import React, {useState} from "react";
 
 function Exercises() {
-  const [page, setPage] = useState("welcome");
+  const [page, setPage] = useState("exercises");
 
   console.log(page);
 
@@ -78,7 +78,7 @@ function Exercises() {
   function displayPage (page) {
     return (
       <div className="exercises">
-        <button back onClick={ () => setPage("welcome")}>back </button>
+        <button back onClick={ () => setPage("exercises")}>back </button>
         <h1>{data[page].name}</h1>
         {displaySteps (page)}
     </div>
@@ -88,7 +88,7 @@ function Exercises() {
   if(page === "squat")
     return (
       <div className="squatPage">
-        <button onClick={ () => setPage("welcome")} className="backButton">back </button>
+        <button onClick={ () => setPage("exercises")} className="backButton">back </button>
         <h1 className="pageTitle">Squat</h1>
         <section>
           <article className="step">
@@ -134,7 +134,7 @@ function Exercises() {
   if(page === "deadlift")
     return (
       <div className="deadliftPage">
-        <button onClick={ () => setPage("welcome")} className="backButton">back </button>
+        <button onClick={ () => setPage("exercises")} className="backButton">back </button>
         <h1 className="pageTitle">Deadlift</h1>
         <section>
           <article className="step">
@@ -187,7 +187,7 @@ function Exercises() {
   if(page === "bench")
     return (
       <div className="benchPage">
-        <button onClick={ () => setPage("welcome")} className="backButton">back </button>
+        <button onClick={ () => setPage("exercises")} className="backButton">back </button>
         <h1 className="pageTitle">Bench</h1>
         <section>
           <article className="step">

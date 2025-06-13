@@ -2,6 +2,7 @@
 
 .App {
   text-align: center;
+  display: flex;
 }
 
 .App-logo {
@@ -50,12 +51,12 @@
 
 body {
   background-color: #3b3b3b;
-  padding: 30px;
 }
 
 
 .card{
   width: 300px;
+  height: fit-content;
   background-color: white;
   background-color: black;
   border-radius: 10px;
@@ -73,6 +74,7 @@ body {
 .exercises {
   display: flex;
   gap: 25px;
+  padding: 50px;
 }
 
 .title {
@@ -143,4 +145,25 @@ h1 {
     border: none;
     background: black;
     color: white;
+}
+
+.navigation {
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  height: 100vw;
+  width: 250px;
+  padding: 30px;
+  padding-top: 100px;
+  gap: 50px;
+  text-decoration: none;
+}
+
+.nav-link {
+  color: white;
+  text-decoration: none;
+}
+
+.selected {
+  color:tan;
 }
