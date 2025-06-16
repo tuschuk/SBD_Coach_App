@@ -72,9 +72,10 @@ body {
 }
 
 .exercises {
-  display: flex;
-  gap: 25px;
-  padding: 50px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 5px;
+  padding: 5px;
 }
 
 .title {
